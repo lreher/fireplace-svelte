@@ -1,0 +1,19 @@
+{
+  "name": "fireplace-svelte",
+  "version": "1.0.0",
+  "description": "Svelte looks cool!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lreher/fireplace-svelte.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lreher/fireplace-svelte/issues"
+  },
+  "homepage": "https://github.com/lreher/fireplace-svelte#readme"
+}

@@ -11,7 +11,7 @@ var router = require('find-my-way')({
   }
 });
 
-require('./routes/test')(router);
+require('./routes/serve')(router);
 
 module.exports = function(request, response) {
   router.lookup(request, response);  

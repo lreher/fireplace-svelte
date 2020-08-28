@@ -16,6 +16,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "find-my-way": "^3.0.4",
     "sirv-cli": "^1.0.0"
   }
 }

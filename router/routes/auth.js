@@ -20,7 +20,7 @@ module.exports = function(router) {
       var code = query.code;
       var userID = query.userID;
 
-      serveFile(response, '../../../public/index.html');
+      serveFile(response, '../../public/index.html');
     });
   });
 }

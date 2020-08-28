@@ -2,7 +2,7 @@
   
 </script>
 
-<div className="login">
+<div class="login">
   <form action="https://accounts.spotify.com/authorize" method="GET">
     <input type="hidden" name="client_id" value="bb0223ab795042bea7ba790b47c20a5c"/>
     <input type="hidden" name="response_type" value="code"/>
@@ -13,3 +13,11 @@
     <button type="submit" id="loginButton" value="Spotify Login">login</button>
   </form>
 </div>
+
+
+<div class="pretty"></div>
+
+
+<style>
+  
+</style>

@@ -335,7 +335,7 @@ var app = (function () {
     const file = "client/Login.svelte";
 
     function create_fragment(ctx) {
-    	let div;
+    	let div0;
     	let form;
     	let input0;
     	let t0;
@@ -348,10 +348,12 @@ var app = (function () {
     	let input4;
     	let t4;
     	let button;
+    	let t6;
+    	let div1;
 
     	const block = {
     		c: function create() {
-    			div = element("div");
+    			div0 = element("div");
     			form = element("form");
     			input0 = element("input");
     			t0 = space();
@@ -365,42 +367,46 @@ var app = (function () {
     			t4 = space();
     			button = element("button");
     			button.textContent = "login";
+    			t6 = space();
+    			div1 = element("div");
     			attr_dev(input0, "type", "hidden");
     			attr_dev(input0, "name", "client_id");
     			input0.value = "bb0223ab795042bea7ba790b47c20a5c";
-    			add_location(input0, file, 6, 4, 121);
+    			add_location(input0, file, 6, 4, 117);
     			attr_dev(input1, "type", "hidden");
     			attr_dev(input1, "name", "response_type");
     			input1.value = "code";
-    			add_location(input1, file, 7, 4, 206);
+    			add_location(input1, file, 7, 4, 202);
     			attr_dev(input2, "type", "hidden");
     			attr_dev(input2, "name", "scope");
     			input2.value = "playlist-modify-public user-read-playback-state streaming user-read-email user-modify-playback-state user-read-private user-library-read user-top-read";
-    			add_location(input2, file, 8, 4, 267);
+    			add_location(input2, file, 8, 4, 263);
     			attr_dev(input3, "type", "hidden");
     			attr_dev(input3, "name", "state");
     			input3.value = "theuserID";
-    			add_location(input3, file, 9, 4, 466);
+    			add_location(input3, file, 9, 4, 462);
     			attr_dev(input4, "type", "hidden");
     			attr_dev(input4, "name", "redirect_uri");
     			input4.value = "http://localhost:5001/callback";
-    			add_location(input4, file, 10, 4, 524);
+    			add_location(input4, file, 10, 4, 520);
     			attr_dev(button, "type", "submit");
     			attr_dev(button, "id", "loginButton");
     			button.value = "Spotify Login";
-    			add_location(button, file, 12, 4, 611);
+    			add_location(button, file, 12, 4, 607);
     			attr_dev(form, "action", "https://accounts.spotify.com/authorize");
     			attr_dev(form, "method", "GET");
-    			add_location(form, file, 5, 2, 49);
-    			attr_dev(div, "classname", "login");
-    			add_location(div, file, 4, 0, 23);
+    			add_location(form, file, 5, 2, 45);
+    			attr_dev(div0, "class", "login");
+    			add_location(div0, file, 4, 0, 23);
+    			attr_dev(div1, "class", "pretty");
+    			add_location(div1, file, 17, 0, 702);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, form);
+    			insert_dev(target, div0, anchor);
+    			append_dev(div0, form);
     			append_dev(form, input0);
     			append_dev(form, t0);
     			append_dev(form, input1);
@@ -412,12 +418,16 @@ var app = (function () {
     			append_dev(form, input4);
     			append_dev(form, t4);
     			append_dev(form, button);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, div1, anchor);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(div1);
     		}
     	};
 

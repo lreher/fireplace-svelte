@@ -21,5 +21,4 @@ module.exports = function(router) {
   router.get('/build/bundle.js', (request, response, params) => {
     serveFile(response, '../../public/build/bundle.js');
   });
-
 }
